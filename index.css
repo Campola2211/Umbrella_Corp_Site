@@ -1,0 +1,12 @@
+#heading{
+        color: white;
+        background-color: red;
+        border-radius: 40px;
+        border-top-left-radius: 100px;
+        background-image: url("umbrella_border.jpg");
+}
+
+h3 {
+	font-family: "Snell Roundhand", cursive;
+	font-size: 30px;
+}

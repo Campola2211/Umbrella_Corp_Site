@@ -1,0 +1,85 @@
+Steps:
+1. Go to http://cs.umw.edu/~ncampola/S19_350_Team_Pink/index.php
+
+2. Click "Sign in as Guest"
+
+3. Click on products 
+
+4. You should see a table full of Bio-Organic Weapons, choose "T-Virus" in the drop down and click submit
+
+5. Results related to T-Virus should appear, click submit again with both values null to see the whole list
+
+6. Choose Hunter in the BOWs dropdown and leave Virus null, hit submit
+
+7. If you choose G-Virus and Hunter none will appear since there are no Hunters with the T-Virus
+
+8. Go back to http://cs.umw.edu/~ncampola/S19_350_Team_Pink/welcome.html, click on Locations, a full list of locations should appear in the table
+
+9. Choose United States and leave city null, when you hit submit you should see Spencer Mansion, The Nest and LightHouse should appear
+
+10. Choose Raccoon City and leave country null to see The Nest and Spencer Mansion
+
+11. Click submit with both fields null to get the full list again
+
+12. Go back to http://cs.umw.edu/~ncampola/S19_350_Team_Pink/index.php
+
+13. Click submit to see the wrong login notifications
+
+14. Use the login username: Aashford and password: Beautysleep4life
+
+15. Click the View checkbox and enter in these values:
+
+	Table: Virus
+	Columns: virusName
+	Leave Data Blank
+
+	Hit submit to see a list of viruses
+
+16. Click the View checkbox and enter in these values:
+	
+	Table: BOWs
+	Columns: name,virusID
+	Data: 'Hunter',1
+
+17. Click on Add checkbox and enter in these values:
+	
+	Table: BOWs
+	Columns: virusID,name,description
+	Data: 1,'Licker','Blind Tracker'
+
+18. Click on View checkbox and enter these values:
+
+	Table: BOWs
+	Columns: BOWID,virusID,name,description
+
+   To see that Licker has been added, but has a higher number than the rest because of auto increment
+
+19. Click on Update checkbox and use these values:
+
+	Table: BOWs
+	Columns: BOWID,name
+	Data: 6,'Licker'
+
+20. Click on view and enter the values from step 18 to see the number has changed to 6
+
+21. Click on delete and enter these values:
+
+	Table: BOWs
+	Columns: BOWID,name
+	Data: 6,'Licker'
+
+22. Click on view and enter the values from step 18 to see Licker is gone.
+
+
+Working Functionalities:
+1. Update, Delete, Insert, and View
+2. Username and Password Detection
+3. SQL Injection prevention
+4. CSS 
+
+Non-working functionalities:
+1. No ability to merge/join tables through the admin view but does have joins utilized in the product view since there was no need to account for variability 
+2. Update view only uses the first parameter as the set and a second parameter as the where, it does not allow more than two parameters like in the others
+
+Other information:
+Although the steps do not cover all the tables used, every table in the diagram has been created and connected properly, admin can see all tables and manipulate them, same goes with username and password logins, only one was used in steps but all work
